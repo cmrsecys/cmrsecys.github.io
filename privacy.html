@@ -3,45 +3,45 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="C-S Monitor �̃v���C�o�V�[�|���V�[�ł��B">
-  <title>C-S Monitor �v���C�o�V�[�|���V�[</title>
+  <meta name="description" content="C-S Monitor のプライバシーポリシーです。">
+  <title>C-S Monitor プライバシーポリシー</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 <main>
-  <h1>C-S Monitor �v���C�o�V�[�|���V�[</h1>
-  <p>�{�s���F2026�N10��3��</p>
-  <p>�{�|���V�[�́AC-S Monitor��Google Sheets�A�g�Ŏ擾����f�[�^�ƁA���̃f�[�^�Ɋ�Â��č쐬������̎戵����������܂��B</p>
+  <h1>C-S Monitor プライバシーポリシー</h1>
+  <p>施行日：2026年10月3日</p>
+  <p>本ポリシーは、C-S MonitorのGoogle Sheets連携で取得するデータと、そのデータに基づいて作成する情報の取扱いを説明します。</p>
 
-  <h2>�擾������Ɨ��p�ړI</h2>
-  <p>���p�҂��ݒ肵���X�v���b�h�V�[�g�̎w��͈͂���A�����R�[�h�A���ʁA�Ď���ԁA���R�E�V�i���I�A�d�_�Ď��w��A�����A�o��ID�A���ؗp����ǂݎ��܂��B�����́A�Ď����̊Ǘ��A�捞���̌��؁A�V�i���I�̕\���A���f�x���A���������̋L�^�Ɏg�p���܂��BGoogle�Ƃ̘A�g�ɕK�v��OAuth�F�؏��������܂��B</p>
+  <h2>取得する情報と利用目的</h2>
+  <p>利用者が設定したスプレッドシートの指定範囲から、銘柄コード、順位、監視状態、理由・シナリオ、重点監視指定、日時、出力ID、検証用情報を読み取ります。これらは、監視候補の管理、取込時の検証、シナリオの表示、判断支援、処理履歴の記録に使用します。Googleとの連携に必要なOAuth認証情報も扱います。</p>
 
-  <h2>Google�ւ̃A�N�Z�X����</h2>
-  <p>�g�p���錠����Google Sheets�̓ǂݎ���p�����ispreadsheets.readonly�j�ł��B�������̂́A�A�g����Google�A�J�E���g�̂��ׂẴX�v���b�h�V�[�g�̉{���������܂��B�A�v���̓ǎ揈���́A�ݒ�ς݂̃X�v���b�h�V�[�gID�Ɣ͈݂͂̂�Ώۂɂ��܂��B�V�[�g�̏����݂�A����Google API�̌����͗v�����܂���B</p>
+  <h2>Googleへのアクセス権限</h2>
+  <p>使用する権限はGoogle Sheetsの読み取り専用権限（spreadsheets.readonly）です。権限自体は、連携したGoogleアカウントのすべてのスプレッドシートの閲覧を許可します。アプリの読取処理は、設定済みのスプレッドシートIDと範囲のみを対象にします。シートの書込みや、他のGoogle APIの権限は要求しません。</p>
 
-  <h2>�ۑ��ꏊ�ƕی�</h2>
-  <p>�F�؏��́AWindows��DPAPI���g���Č��݂�Windows���[�U�[�Ɍ��ѕt���ĈÍ������A���p�҂̃p�\�R�����ɕۑ����܂��B�F�؏��̍X�V���́A�����ۑ���̏���u�������܂��B</p>
-  <p>�K�p�����f�[�^�A���؏��A�Ď���ԁA�V�i���I�A���������́A�p�\�R������SQLite�f�[�^�x�[�X�ɕۑ����܂��BDPAPI�ɂ��Í����̐����͔F�؏��ɂ��Ăł���A�f�[�^�x�[�X�S�̂̈Í������Ӗ����܂���B</p>
+  <h2>保存場所と保護</h2>
+  <p>認証情報は、WindowsのDPAPIを使って現在のWindowsユーザーに結び付けて暗号化し、利用者のパソコン内に保存します。認証情報の更新時は、同じ保存先の情報を置き換えます。</p>
+  <p>適用したデータ、検証情報、監視状態、シナリオ、処理履歴は、パソコン内のSQLiteデータベースに保存します。DPAPIによる暗号化の説明は認証情報についてであり、データベース全体の暗号化を意味しません。</p>
 
-  <h2>���T�[�r�X��A�v���Ƃ̘A�g</h2>
-  <p>�s��f�[�^�̎擾�E�Ď��o�^�̂��߁A�A�g���kabu�X�e�[�V����API�֖����R�[�h�ȂǕK�v�ȏ���n���܂��B�A�v���̐ڑ���́A�p�\�R������kabu�X�e�[�V�����ł��B</p>
-  <p>GPT���͂́AGoogle Sheets�̓ǎ揈���Ƃ͕ʂ̔C�ӑ���ł��B���p�҂�OpenAI API�L�[��ݒ肵�AGPT���͂����s�����ꍇ�A�Ď��󋵂Ȃǂ��܂Ƃ߂����͗pContext��OpenAI API�֑��M����܂��B����Context�ɂ́A��荞��Google�R���̃V�i���I�Ȃǂ��܂܂��\��������܂��B����^�p�ł�GPT���͂��g�p���Ȃ����j�ł����A�@�\���͎̂c���Ă��܂��B</p>
-  <p>���p�҂������R�s�[���ă`���b�g�Ȃǂ֓\��t���鑀��́A�A�v���ɂ��Google Sheets�̓ǎ揈���Ƃ͕ʂ̑���ł��B</p>
+  <h2>他サービスやアプリとの連携</h2>
+  <p>市場データの取得・監視登録のため、連携先のkabuステーションAPIへ銘柄コードなど必要な情報を渡します。アプリの接続先は、パソコン内のkabuステーションです。</p>
+  <p>GPT分析は、Google Sheetsの読取処理とは別の任意操作です。利用者がOpenAI APIキーを設定し、GPT分析を実行した場合、監視状況などをまとめた分析用ContextがOpenAI APIへ送信されます。このContextには、取り込んだGoogle由来のシナリオなどが含まれる可能性があります。日常運用ではGPT分析を使用しない方針ですが、機能自体は残っています。</p>
+  <p>利用者が情報をコピーしてチャットなどへ貼り付ける操作は、アプリによるGoogle Sheetsの読取処理とは別の操作です。</p>
 
-  <h2>�ۑ����Ԃƍ폜</h2>
-  <p>�F�؏��ƃ��[�J���̕ۑ��f�[�^�ɁA�����Ԍ�̎����폜�͂���܂���B���p�҂��[�����̃f�[�^���Ǘ����A�s�v�ɂȂ����f�[�^�̍폜���s���܂��B�o�b�N�A�b�v�╡�����쐬�����ꍇ�A���������p�҂��ʓr�Ǘ��E�폜���܂��B</p>
+  <h2>保存期間と削除</h2>
+  <p>認証情報とローカルの保存データに、一定期間後の自動削除はありません。利用者が端末内のデータを管理し、不要になったデータの削除を行います。バックアップや複製を作成した場合、それらも利用者が別途管理・削除します。</p>
 
-  <h2>Google�A�g�̉���</h2>
-  <p>Google�A�J�E���g�̘A�g�A�v���Ǘ�����AC-S Monitor�ւ̃A�N�Z�X�������������܂��B�菇��<a href="https://support.google.com/accounts/answer/13533235?hl=ja">Google�̘A�g�A�v���Ǘ��̈ē�</a>�����m�F���������B</p>
-  <p>�A�v�����ɂ́A�A�g�����E�g�[�N���폜�EGoogle�̌�����������s���@�\�͂���܂���BGoogle���ł̃A�N�Z�X�����̎�����ƁA�p�\�R�����̔F�؏���擾�ς݃f�[�^�̍폜�͕ʂ̑���ł��B�������������Ă��A�擾�ς݂̃f�[�^��o�b�N�A�b�v�͎����I�ɂ͍폜����܂���B</p>
+  <h2>Google連携の解除</h2>
+  <p>Googleアカウントの連携アプリ管理から、C-S Monitorへのアクセス権限を取り消せます。手順は<a href="https://support.google.com/accounts/answer/13533235?hl=ja">Googleの連携アプリ管理の案内</a>をご確認ください。</p>
+  <p>アプリ内には、連携解除・トークン削除・Googleの権限取消しを行う機能はありません。Google側でのアクセス権限の取消しと、パソコン内の認証情報や取得済みデータの削除は別の操作です。権限を取り消しても、取得済みのデータやバックアップは自動的には削除されません。</p>
 
-  <h2>���̐����T�C�g�ɂ���</h2>
-  <p>���̐����T�C�g��GitHub Pages�Ŕz�M���Ă��܂��B�T�C�g�̔z�M�ɔ����AGitHub��IP�A�h���X�Ȃǂ̃A�N�Z�X������舵���ꍇ������܂��B�ڂ�����<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub�̃v���C�o�V�[�X�e�[�g�����g</a>�����m�F���������B</p>
+  <h2>この説明サイトについて</h2>
+  <p>この説明サイトはGitHub Pagesで配信しています。サイトの配信に伴い、GitHubがIPアドレスなどのアクセス情報を取り扱う場合があります。詳しくは<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHubのプライバシーステートメント</a>をご確認ください。</p>
 
-  <h2>�ύX�Ƃ��₢���킹</h2>
-  <p>�{�|���V�[�́A�A�v���̕ύX�Ȃǂɉ����čX�V���邱�Ƃ�����܂��B</p>
-  <p>�^�c�FC-S Monitor �Ǘ���<br>���₢���킹�F<a href="mailto:cmrsecys@gmail.com">cmrsecys@gmail.com</a></p>
-  <p><a href="./index.html">C-S Monitor�̃A�v�������ɖ߂�</a></p>
+  <h2>変更とお問い合わせ</h2>
+  <p>本ポリシーは、アプリの変更などに応じて更新することがあります。</p>
+  <p>運営：C-S Monitor 管理者<br>お問い合わせ：<a href="mailto:cmrsecys@gmail.com">cmrsecys@gmail.com</a></p>
+  <p><a href="./index.html">C-S Monitorのアプリ説明に戻る</a></p>
 </main>
 </body>
 </html>
