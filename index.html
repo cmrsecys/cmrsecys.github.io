@@ -3,31 +3,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="�l�p�̊����Ď��E���f�x���c�[�� C-S Monitor �̐����y�[�W�ł��B">
+  <meta name="description" content="個人用の株式監視・判断支援ツール C-S Monitor の説明ページです。">
   <title>C-S Monitor</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 <main>
   <h1>C-S Monitor</h1>
-  <p>Windows�œ��삷��A�l�p�̊����Ď��E���f�x���c�[���ł��B</p>
+  <p>Windowsで動作する、個人用の株式監視・判断支援ツールです。</p>
 
-  <h2>�A�v���ɂ���</h2>
-  <p>C-S Monitor�́A�Ď�����V�i���I�A�捞�����A���f�E�����L�^�𗘗p�҂̃p�\�R�����ŊǗ����܂��B�������f�Ɣ����͗��p�҂��s���܂��B</p>
+  <h2>アプリについて</h2>
+  <p>C-S Monitorは、監視候補やシナリオ、取込履歴、判断・売買記録を利用者のパソコン内で管理します。投資判断と発注は利用者が行います。</p>
 
-  <h2>Google Sheets�A�g</h2>
-  <p>���p�҂��ݒ肵��1��Google�X�v���b�h�V�[�g�̎w��͈͂���A�Ď��p�f�[�^��ǂݎ��܂��B���t�A�����f�[�^�̑������A�n�b�V���A�����Ȃǂ����؂��A�捞�E���f�̉ۂ��m�F���܂��B</p>
-  <p>�N�����̎����捞�E���f�͐ݒ�ɂ��L��������@�\�ŁA���݂̖{�Ԑݒ�ł͖����ł��B</p>
+  <h2>Google Sheets連携</h2>
+  <p>利用者が設定した1つのGoogleスプレッドシートの指定範囲から、監視用データを読み取ります。日付、分割データの揃い方、ハッシュ、件数などを検証し、取込・反映の可否を確認します。</p>
+  <p>起動時の自動取込・反映は設定により有効化する機能で、現在の本番設定では無効です。</p>
 
-  <h2>�g�p����Google�̌���</h2>
-  <p>Google Sheets�̓ǂݎ���p�����ispreadsheets.readonly�j���g�p���܂��B���̌������̂́A�A�g����Google�A�J�E���g�̂��ׂẴX�v���b�h�V�[�g���{���ł���͈͂ł��B�A�v���̓ǎ揈���́A�ݒ肵���X�v���b�h�V�[�gID�Ɣ͈͂�����Ώۂɂ��܂��B�V�[�g�̏����݂�A����Google API�̌����͗v�����܂���B</p>
+  <h2>使用するGoogleの権限</h2>
+  <p>Google Sheetsの読み取り専用権限（spreadsheets.readonly）を使用します。この権限自体は、連携したGoogleアカウントのすべてのスプレッドシートを閲覧できる範囲です。アプリの読取処理は、設定したスプレッドシートIDと範囲だけを対象にします。シートの書込みや、他のGoogle APIの権限は要求しません。</p>
 
-  <h2>�F�؂ƃf�[�^�̎戵��</h2>
-  <p>Google�ւ̔F�؂͒ʏ�̃u���E�U�[�ōs���܂��B�F�؏��͌��݂�Windows���[�U�[�Ɍ��ѕt���ĈÍ������A�p�\�R�����ɕۑ����܂��B��荞��œK�p�����f�[�^�◚�������[�J���ɕۑ����܂��B</p>
-  <p>�ۑ����ԁA�A�g�����Akabu�X�e�[�V����API��C�ӂ�GPT���͂ł̏��̎戵���́A<a href="./privacy.html">�v���C�o�V�[�|���V�[</a>�����m�F���������B</p>
+  <h2>認証とデータの取扱い</h2>
+  <p>Googleへの認証は通常のブラウザーで行います。認証情報は現在のWindowsユーザーに結び付けて暗号化し、パソコン内に保存します。取り込んで適用したデータや履歴もローカルに保存します。</p>
+  <p>保存期間、連携解除、kabuステーションAPIや任意のGPT分析での情報の取扱いは、<a href="./privacy.html">プライバシーポリシー</a>をご確認ください。</p>
 
-  <h2>�^�c�Ƃ��₢���킹</h2>
-  <p>�^�c�FC-S Monitor �Ǘ���<br>���₢���킹�F<a href="mailto:cmrsecys@gmail.com">cmrsecys@gmail.com</a></p>
+  <h2>運営とお問い合わせ</h2>
+  <p>運営：C-S Monitor 管理者<br>お問い合わせ：<a href="mailto:cmrsecys@gmail.com">cmrsecys@gmail.com</a></p>
 </main>
 </body>
 </html>
